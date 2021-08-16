@@ -1,5 +1,30 @@
 package com.example.learningkotlin
 
+class Dog() {
+  var name = ""
+  var age = 0
+  var furColor = ""
+
+  fun dogInfo() : String {
+     return name + " is " + age + " years old and has " + furColor + " fur"
+  }
+}
+
+fun printHello() {
+   println("Hello World")
+}
+
+fun addTwoNumbers(n1 : Int, n2 : Int) : Int {
+ //  println(n1 + n2)
+   return n1 + n2
+}
+
+fun nameAndAge(name : String, age : Int) : String {
+   return "The Dog's name is " + name + " and its age is " + age
+
+}
+
+
 fun main(args:Array<String>) {
    println("Hello World!")
    // non mutable variable
@@ -69,4 +94,27 @@ fun main(args:Array<String>) {
 
    }
 
+   for (i in 0..topCandy.size-1){
+      println(topCandy[i])
+   }
+
+  // for (i in 0..1_000) {
+  //    if (i > 453){
+  //       println(i)
+  //    }
+  // }
+
+   printHello()
+
+   var x = addTwoNumbers(10,5)
+   println(x)
+   var s = nameAndAge("Bob", 5)
+   println(s)
+
+
+   var myDog = Dog()
+   myDog.age = 6
+   myDog.name = "Fido"
+   myDog.furColor = "Brown"
+   println(myDog.dogInfo())
 }

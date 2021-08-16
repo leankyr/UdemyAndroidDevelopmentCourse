@@ -3,12 +3,20 @@ plugins {
     id 'kotlin-android'
 }
 
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+
+
 android {
     compileSdk 31
 
     defaultConfig {
         applicationId "com.example.learningkotlin"
-        minSdk 28
+        minSdk 15
         targetSdk 31
         versionCode 1
         versionName "1.0"
